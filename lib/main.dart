@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
+import 'package:car_rental_app/views/screens/onboarding_screen.dart';
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized(); // Ensures all Flutter widgets have been successfully initialised
   
@@ -24,6 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      home: const OnboardingScreen(),
     );
   }
 }
