@@ -5,9 +5,17 @@ class OnboardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Onboarding Screen'),
+    return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/onboarding.png'),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
