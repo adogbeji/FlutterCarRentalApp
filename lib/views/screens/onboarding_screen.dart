@@ -12,7 +12,21 @@ class OnboardingScreen extends StatelessWidget {
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/images/onboarding.png'),
+                fit: BoxFit.cover,
               ),
+            ),
+          ),
+          Container(
+            child: Column(
+              children: [
+                Text(
+                  'Premium cars. Enjoy the luxury',
+                  style: TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
             ),
           ),
         ],
