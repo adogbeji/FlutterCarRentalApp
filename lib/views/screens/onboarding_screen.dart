@@ -17,9 +17,9 @@ class OnboardingScreen extends StatelessWidget {
           //   ),
           // ),
           Container(
-            child: const Column(
+            child: Column(
               children: [
-                Text(
+                const Text(
                   'Premium cars. Enjoy the luxury',
                   style: TextStyle(
                     fontSize: 32,
@@ -27,8 +27,20 @@ class OnboardingScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 10,),
-                Text('Premium and prestigious daily car rental.\nExperience the thrill at a lower price')
+
+                const SizedBox(height: 10,),
+
+                const Text(
+                  'Premium and prestigious daily car rental.\nExperience the thrill at a lower price',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.grey,
+                  ),
+                ),
+
+                const SizedBox(height: 20,),
+
+                ElevatedButton(onPressed: () {}, child: const Text('Let\'s Go'),),
               ],
             ),
           ),
