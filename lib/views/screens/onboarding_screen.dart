@@ -40,7 +40,20 @@ class OnboardingScreen extends StatelessWidget {
 
                 const SizedBox(height: 20,),
 
-                ElevatedButton(onPressed: () {}, child: const Text('Let\'s Go'),),
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    foregroundColor: Colors.black,
+                    backgroundColor: Colors.white,
+                  ),
+                  child: const Text(
+                    'Let\'s Go',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
