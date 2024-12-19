@@ -8,14 +8,16 @@ class OnboardingScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          // Container(
-          //   decoration: const BoxDecoration(
-          //     image: DecorationImage(
-          //       image: AssetImage('assets/images/onboarding.png'),
-          //       fit: BoxFit.cover,
-          //     ),
-          //   ),
-          // ),
+          Expanded(
+            child: Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/onboarding.png'),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          ),
           Container(
             child: Column(
               children: [
@@ -40,17 +42,21 @@ class OnboardingScreen extends StatelessWidget {
 
                 const SizedBox(height: 20,),
 
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.black,
-                    backgroundColor: Colors.white,
-                  ),
-                  child: const Text(
-                    'Let\'s Go',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+                SizedBox(
+                  width: 320,
+                  height: 54,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.white,
+                    ),
+                    child: const Text(
+                      'Let\'s Go',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
