@@ -5,10 +5,8 @@ class CarCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Card Card'),
-      ),
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
     );
   }
 }
