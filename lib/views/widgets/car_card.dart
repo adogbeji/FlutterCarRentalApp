@@ -5,7 +5,7 @@ import 'package:car_rental_app/models/car.dart';
 class CarCard extends StatelessWidget {
   final Car car;
 
-  // const CarCard({super.key});
+  const CarCard({super.key, required this.car});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +14,33 @@ class CarCard extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       child: Column(
         children: [
-          Image.asset('assets/images//car_image.png', height: 120,),
-          Text(car.model),
-        ]
+          Image.asset(
+            'assets/images/car_image.png',
+            height: 120,
+          ),
+          Text(
+            car.model,
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 10,),
+
+          Row(
+            children: [
+              Row(
+                children: [
+                  Row(
+                    children: [
+                      Image.asset('assets/images/gps.png')
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
